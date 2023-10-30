@@ -56,4 +56,18 @@ createApp({
       counter: 0
     };
   },
+  methods: {
+    nextImage(){
+        this.counter++;
+        if(this.counter === this.slides.length){
+            this.counter = 0;
+        };
+    },
+    previousImage(){
+        this.counter--;
+        if(this.counter === -1){
+            this.counter = this.slides.length-1;
+        }
+    }
+  },
 }).mount('#app');
