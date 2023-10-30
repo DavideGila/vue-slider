@@ -70,12 +70,12 @@ createApp({
         }
     },
     active(index){
-        if(this.counter === index){
-            'active' 
+        if(this.counter === index){ 
             return 'active'
-        } else {
-            ''
-        }
+        } 
+    },
+    thumbClick(index){
+        return this.counter = index
     }
   },
 }).mount('#app');
