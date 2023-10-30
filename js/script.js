@@ -68,6 +68,14 @@ createApp({
         if(this.counter === -1){
             this.counter = this.slides.length-1;
         }
+    },
+    active(index){
+        if(this.counter === index){
+            'active' 
+            return 'active'
+        } else {
+            ''
+        }
     }
   },
 }).mount('#app');
